@@ -3,11 +3,284 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <title>Tealuxe</title>
   </head>
   <body>
-    <header class="header"></header>
-    <main class="main"></main>
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <a class="logo" href="">
+            <svg class="logo-icon">
+              <use href="/images/symbol-defs.svg#icon-logo"></use>
+            </svg>
+          </a>
+
+          <nav class="nav">
+            <button class="burger-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+
+            <ul class="nav-list">
+              <li class="nav-list-item">
+                <a class="nav-item-link" href="#">Black</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="nav-item-link" href="#">Green</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="nav-item-link" href="#">White</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="nav-item-link" href="#">Oolong</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="nav-item-link" href="#">Pu-erh</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="user-actions-list">
+            <li class="user-actions-item">
+              <a class="user-actions-link" href="#">
+                <svg class="user-actions-icon icon-basket">
+                  <use href="/images/symbol-defs.svg#icon-basket"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="user-actions-item">
+              <a class="user-actions-link" href="#">
+                <svg class="user-actions-icon icon-user">
+                  <use href="/images/symbol-defs.svg#icon-user"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="user-actions-item user-actions-item-search">
+              <a class="user-actions-link" href="#">
+                <svg class="user-actions-icon icon-search">
+                  <use href="/images/symbol-defs.svg#icon-search"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="hero-title">
+              A cup of tea is a moment of calm in the chaos of life
+            </h1>
+            <p class="hero-text">
+              Wide selection of high-quality teas from all over the world,
+              carefully curated by tea experts.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <blockquote class="blockquote">
+        <p class="blockquote-text">
+          "Tea is not just a drink, it's a way of life and a way to connect with
+          our loved ones."
+        </p>
+      </blockquote>
+
+      <section class="collection">
+        <div class="container">
+          <div class="collection-content">
+            <h2 class="collection-title">Explore our Collections</h2>
+
+            <ul class="collection-list">
+              <li class="collection-list-item">
+                <img
+                  src="images/black.png"
+                  alt="black tea leafs"
+                  class="collection-item-img"
+                />
+                <p class="collection-item-text">Black</p>
+              </li>
+              <li class="collection-list-item">
+                <img
+                  src="images/green.png"
+                  alt="black tea leafs"
+                  class="collection-item-img"
+                />
+                <p class="collection-item-text">Green</p>
+              </li>
+              <li class="collection-list-item">
+                <img
+                  src="images/white.png"
+                  alt="white tea leafs"
+                  class="collection-item-img"
+                />
+                <p class="collection-item-text">White</p>
+              </li>
+              <li class="collection-list-item">
+                <img
+                  src="images/oolong.png"
+                  alt="oolong tea leafs"
+                  class="collection-item-img"
+                />
+                <p class="collection-item-text">Oolong</p>
+              </li>
+              <li class="collection-list-item">
+                <img
+                  src="images/pu-erh.png"
+                  alt="pu-erh tea leafs"
+                  class="collection-item-img"
+                />
+                <p class="collection-item-text">Pu-erh</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="container">
+          <div class="reviews-content">
+            <h2 class="reviews-title">What our Clients say</h2>
+
+            <ul class="reviews-list">
+              <li class="reviews-list-item">
+                <p class="reviews-item-text">
+                  "As a tea enthusiast, I have tried teas from all over the
+                  world, but this tea store truly stands out. Their teas are of
+                  the highest quality and the variety is impressive. This is
+                  definitely a tea store that every tea lover should visit."
+                </p>
+                <p class="reviews-item-user">Alice</p>
+              </li>
+
+              <li class="reviews-list-item">
+                <p class="reviews-item-text">
+                  "This tea store is my go-to for all my tea needs. Their
+                  selection is unbeatable and the quality of their teas is
+                  exceptional."
+                </p>
+                <p class="reviews-item-user">Mad-Hatter</p>
+              </li>
+
+              <li class="reviews-list-item">
+                <p class="reviews-item-text">
+                  "If you're a tea lover, you must visit this tea store. The
+                  selection is vast and the quality is outstanding. I guarantee
+                  you won't be disappointed."
+                </p>
+                <p class="reviews-item-user">Dormouse</p>
+              </li>
+
+              <li class="reviews-list-item">
+                <p class="reviews-item-text">
+                  "I am not a big tea drinker, but this tea store has converted
+                  me. I highly recommend this tea store to anyone looking for a
+                  high-quality tea experience."
+                </p>
+                <p class="reviews-item-user">March Hare</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog">
+        <div class="container">
+          <div class="blog-content">
+            <h2 class="blog-title">Our Tea Blog</h2>
+
+            <ul class="blog-list">
+              <li class="blog-list-item">
+                <img class="blog-img" src="images/blog1.jpg" alt="" />
+                <div class="text-content">
+                  <p class="blog-item-text">
+                    Tea Time Travels: Funny Moments from Around the World
+                  </p>
+                  <p class="blog-item-author">by Robinson Crusoe</p>
+                  <a class="blog-item-link" href="#">
+                    Read
+                    <svg class="arrow-icon">
+                      <use href="/images/symbol-defs.svg#icon-arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+
+              <li class="blog-list-item">
+                <img class="blog-img" src="images/blog3.jpg" alt="" />
+                <div class="text-content">
+                  <p class="blog-item-text">The Role of Tea in Mental Health</p>
+                  <p class="blog-item-author">by Joker</p>
+                  <a class="blog-item-link" href="#">
+                    Read
+                    <svg class="arrow-icon">
+                      <use href="/images/symbol-defs.svg#icon-arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+
+              <li class="blog-list-item">
+                <img class="blog-img" src="images/blog2.jpg" alt="" />
+                <div class="text-content">
+                  <p class="blog-item-text">
+                    Tea-rific Tales: Hilarious Stories from Tea Lovers
+                  </p>
+                  <p class="blog-item-author">by Casper the Friendly Ghost</p>
+                  <a class="blog-item-link" href="#">
+                    Read
+                    <svg class="arrow-icon">
+                      <use href="/images/symbol-defs.svg#icon-arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+
+              <li class="blog-list-item">
+                <img class="blog-img" src="images/blog4.jpg" alt="" />
+                <div class="text-content">
+                  <p class="blog-item-text">
+                    Tea and Caffeine: Effects on the Brain and Behavior
+                  </p>
+                  <p class="blog-item-author">by Author Authorius</p>
+                  <a class="blog-item-link" href="#">
+                    Read
+                    <svg class="arrow-icon">
+                      <use href="/images/symbol-defs.svg#icon-arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+            </ul>
+
+            <a class="blog-link" href="#">View all</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="more">
+        <div class="container">
+          <div class="more-content"></div>
+        </div>
+      </section>
+    </main>
+
     <footer class="footer"></footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
