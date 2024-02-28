@@ -515,6 +515,9 @@ HEADER
   .collection-title {
     font-size: 24px;
   }
+  .collection-item-img {
+    max-width: 160px;
+  }
 }
 /* -----------------REVIEWS----------------- */
 
@@ -741,4 +744,327 @@ HEADER
   .blog-list-item:nth-child(2n) {
     display: none;
   }
+}
+
+/* -------------SUBSCRIBE----------------- */
+
+.subscribe {
+  padding: 100px 0;
+  background-color: var(--back);
+  background-image: url(../images/subscribe-img.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+.subscribe-title {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+.subscribe-text-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.subscribe-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  max-width: 580px;
+}
+.subscribe-form {
+  max-width: 580px;
+}
+.subscribe-email {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: var(--black);
+  border: none;
+  border-bottom: 1px solid var(--form);
+  background-color: transparent;
+  min-width: 439px;
+  margin-right: 20px;
+  padding: 13px 15px;
+}
+.subscribe-email::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: var(--form);
+  font-size: 20px;
+}
+.subscribe-btn {
+  background-color: var(--white);
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 12px 41px;
+  border: 1px solid var(--black);
+}
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  color: var(--form);
+  text-decoration: underline;
+  border: 1px solid var(--form);
+}
+.subscribe-lable {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+  margin-top: 10px;
+}
+.subscribe-checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  padding-left: 20px;
+}
+.subscribe-span {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 1px solid var(--black);
+  margin-top: 4px;
+  background-color: var(--white);
+}
+.subscribe-lable-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  padding-left: 20px;
+}
+
+.subscribe-checkbox:checked + .subscribe-span::before {
+  content: "";
+  position: absolute;
+  width: 6.5px;
+  height: 6px;
+  background-color: var(--form);
+  top: 1px;
+  left: 1px;
+}
+
+/* ------------PRIORITISE----------------- */
+
+.prioritise {
+  margin: 150px 0;
+}
+.prioritise-content {
+  text-align: center;
+}
+.prioritise-title {
+  font-size: 40px;
+  margin-bottom: 60px;
+}
+.prioritise-list {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.prioritise-list-item {
+}
+.prioritise-item-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.prioritise-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.prioritise-icon {
+  width: 60px;
+  height: 60px;
+  fill: var(--brown);
+}
+
+/*
+========================
+    FOOTER
+========================
+*/
+
+.footer {
+  padding-top: 100px;
+  padding-bottom: 10px;
+  background-color: var(--back);
+}
+.footer-content {
+  display: flex;
+}
+
+/* ----------TEAS------------ */
+
+.footer-teas {
+  margin-right: 213px;
+}
+.footer-teas-item:not(:first-child):not(:last-child) {
+  margin-bottom: 20px;
+}
+.footer-teas-title {
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+.footer-teas-link {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+.footer-teas-link:hover,
+.footer-teas-link:focus {
+  color: var(--form);
+  text-decoration: underline;
+}
+
+/* -------COMPANY---------- */
+
+.footer-company {
+  margin-right: 155px;
+}
+.footer-company-item:not(:first-child):not(:last-child) {
+  margin-bottom: 20px;
+}
+.footer-item-title {
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+.footer-company-link {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+.footer-company-link:hover,
+.footer-company-link:focus {
+  color: var(--form);
+  text-decoration: underline;
+}
+
+/* ------------BLOCKQUOTE----------- */
+
+.footer-blockquote {
+  margin-top: 100px;
+  margin-right: 41px;
+}
+.footer-blockquote-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 300;
+  margin-bottom: 20px;
+  max-width: 269px;
+}
+.footer-blockquote-cite {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  max-width: 129px;
+}
+
+/* --------CONTACTS------------- */
+
+.footer-contacts {
+  max-width: 270px;
+}
+.footer-item-title {
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+.footer-stay-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.footer-contacts-list {
+  display: flex;
+  gap: 40px;
+}
+.footer-logo-icon {
+  width: 57px;
+  height: 91px;
+}
+
+.contacts-link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+}
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--form);
+  text-decoration: underline;
+  fill: var(--form);
+}
+.contacts-email-icon {
+  width: 22px;
+  height: 16px;
+}
+.contacts-number-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+.socials-facebook-icon {
+  width: 22px;
+  height: 22px;
+}
+.socials-youtube-icon {
+  width: 24px;
+  height: 18px;
+}
+.socials-instagram-icon {
+  width: 22px;
+  height: 22px;
+}
+.socials-twitter-icon {
+  width: 22px;
+  height: 18px;
+}
+.socials-link:hover,
+.socials-link:focus {
+  fill: var(--form);
+}
+
+/* -------COPY--------- */
+.copy {
+  display: flex;
+  margin-top: 100px;
+}
+.copy-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  margin-right: 180px;
+}
+.copy-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.mastercard-icon {
+  width: 26px;
+  height: 20px;
+}
+.visa-icon {
+  width: 31px;
+  height: 10px;
+}
+.google-icon {
+  width: 29px;
+  height: 12px;
+}
+.paypal-icon {
+  width: 10px;
+  height: 12px;
 }
